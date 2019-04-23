@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\1.jpg" />
+    <None Include="wwwroot\images\2.jpg" />
+    <None Include="wwwroot\images\3.jpg" />
+    <None Include="wwwroot\images\big-data-for-algorithm-trading.jpg" />
+    <None Include="wwwroot\images\callphone.png" />
+    <None Include="wwwroot\images\email-envelope.png" />
+    <None Include="wwwroot\images\facebook-logo-button.png" />
+    <None Include="wwwroot\images\finance-data-science-1013x440.jpg" />
+    <None Include="wwwroot\images\healthcare-1080x608.jpg" />
+    <None Include="wwwroot\images\linkedin-button.png" />
+    <None Include="wwwroot\images\map-pin-silhouette.png" />
+    <None Include="wwwroot\images\sfo.png" />
+    <None Include="wwwroot\images\twitter-logo-silhouette.png" />
+    <None Include="wwwroot\images\worldwide.png" />
+  </ItemGroup>
+
+</Project>

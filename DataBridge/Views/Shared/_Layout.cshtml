@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/content/site.css" rel="stylesheet" />
+    <script src="~/content/script.js"></script>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body onload=" carousel()">
+    <!---nav bar-->
+    <div class="nav_container1" id="demo">
+        <ul class="navbartransparent">
+            <li><a asp-controller="Home" asp-action="Index" class="active" >Home</a></li>
+            <li><a href="">Finance</a></li>
+            <li><a asp-controller="Marketing" asp-action="Index" >Marketing</a></li>
+            <li><a asp-controller="Health" asp-action="Index" >Health</a></li>
+            <partial name="_LoginPartial" />
+        </ul>
+        <input id="search_input" type="text" placeholder="Search..">
+    </div>
+ 
+    <!--rendred elements--> 
+    <div>
+        @RenderBody()
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div>
+            <div class="footer_div1">
+                <ul>
+                    <li><a href=""><img id="footer_image" src="~/images/callphone.png" alt=""> telephone</a></li>
+                    <li><a href=""><img id="footer_image" src="~/images/map-pin-silhouette.png" alt="">adresse</a></li>
+                    <li><a href=""><img id="footer_image" src="~/images/email-envelope.png" alt="">E-mail</a></li>
+                </ul>
+            </div>
+            <div class="footer_div2">
+                <h3>about us</h3>
+                <p> because it allows to train Machine Learning models much faster with higher accuracy.</p>
+                <a href=""><img id="footer_image" src="~/images/twitter-logo-silhouette.png" alt=""></a>
+                <a href=""><img id="footer_image" src="~/images/linkedin-button.png" alt=""></a>
+                <a href=""><img id="footer_image" src="~/images/facebook-logo-button.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+    @RenderSection("Scripts" , required: false)
+</body>
+</html>
