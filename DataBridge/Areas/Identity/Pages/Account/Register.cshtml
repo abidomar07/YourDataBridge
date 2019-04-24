@@ -16,7 +16,7 @@
         <h4>Welcome!</h4>
         <form asp-route-returnUrl="@Model.ReturnUrl" method="POST">
             <input asp-for="Input.Email" type="email" placeholder="Email" class="inputform"><br>
-
+            <input asp-for="Input.UserName" type="text" placeholder="User name" class="inputform"><br>
             <input asp-for="Input.Password" type="password" placeholder="Password" class="inputform"><br>
             <input asp-for="Input.ConfirmPassword" type="password" placeholder="Confirm password" class="inputform"><br>
             <input type="submit" value="LOGIN" class="login_sub">
